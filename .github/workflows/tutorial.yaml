@@ -1,0 +1,13 @@
+name: Tutorial
+on: [push]
+
+jobs:
+  create-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hello github actions!"
+      - name: My command
+        run: |
+          node -v
+          npm -v
